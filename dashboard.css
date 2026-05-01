@@ -1,0 +1,779 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+}
+.sidebar{
+    background-color: black;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    padding: 20px 0px 0px 0px;
+}
+.sidebar h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.sidebar li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+}
+.sidebar li:hover{
+    background-color: #333;
+}
+li{
+    list-style: none;
+    padding: 15px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.icons{
+    position: absolute;
+    bottom: 0%;
+    color: white;
+    margin-left: 55px;
+    font-size: 30px;
+}
+.fa-brands{
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.fa-brands:hover{
+    transform: translateY(-10px);
+}
+.fa-solid{
+    margin-right: 10px;
+}
+.dashboardpage{
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+}
+.heading{
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 1px;
+    padding-top: 10px ;
+    color: #000;
+}
+.wrapper{
+    margin-left: 250px; /* sidebar width */
+    padding: 20px;
+}
+.causes h1{
+    color: black;
+    text-align: center;
+    font-weight: 700;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+}
+.row{
+    align-items: stretch;
+}
+/* Dashboard Cards */
+.dashboard-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    background: #fff;
+    margin-bottom: 20px ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover Effect */
+.dashboard-card:hover {
+    
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    background-color:  #f1f3f5;
+    
+}
+
+/* Card Header */
+.dashboard-card .card-header {
+    
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+    border-radius: 14px 14px 0 0;
+    font-size: 20px;
+    background: linear-gradient(45deg, #000000, #434343);
+    box-shadow: none;
+}
+.dashboard-card:hover .card-header {
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+/* Amount text */
+.dashboard-card .amount {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.3s;
+    color: #000;
+    transform: scale(1);
+}
+.dashboard-card:hover .amount {
+    transform: scale(1.1);
+}
+
+/* Small text */
+.dashboard-card .small-text {
+    font-size: 13px;
+    text-align: center;
+    color: #777;
+    font-style: italic;
+}
+
+/* List items */
+.dashboard-card .list-group-item {
+    text-align: center;
+    border: none;
+}
+
+.list li.active{
+    background-color: #333;
+    border-left: 5px solid white;
+}
+
+/* Table Wrapper */
+.dashtable {
+    margin: 30px 0px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 12px;
+}
+.dashtable h2{
+    font-weight: 700;
+}
+
+/* Table */
+.dashtable .table {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Table Header */
+.dashtable .table thead th {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 14px;
+    border-bottom: none;
+}
+
+/* Table Body */
+.dashtable .table tbody td,
+.dashtable .table tbody th {
+    padding: 14px;
+    color: #333;
+    vertical-align: middle;
+}
+
+/* buttons list */
+.filter-buttons{
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Normal Buttons */
+.filter-btn{
+    border-radius: 25px;
+    margin: 10px;
+    padding: 8px 18px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Active Button */
+.active-filter{
+    background-color: black;
+    color: white;
+}
+
+/* Hover Effect */
+.filter-btn:hover{
+    background-color: #eaeaea;
+}
+
+.causes-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.causes-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.card-img-top{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* CARD BODY */
+.causes-body {
+    padding: 15px;
+    text-align: center;
+}
+
+/* TITLE */
+.causes-body h5{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* DESCRIPTION */
+.causes-body .desc {
+    font-size: 14px;
+    color: #555;
+}
+
+/* PROGRESS */
+.progress {
+    height: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* AMOUNT */
+.amount-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* BUTTONS */
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page{
+    margin-left: 250px;
+    padding: 40px 30px;
+    background-color: rgb(161, 161, 161);
+    min-height: 100vh;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.about-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-heading h1{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.about-heading p{
+    color: #444;
+    font-size: 20px;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section{
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+.about-section:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.about-img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-content h2{
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.about-content p{
+    text-align: left;
+    font-size: 17px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* =========================
+   MISSION SECTION
+========================= */
+
+.mission-section{
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.mission-section:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.mission-section h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.mission-section p{
+    color: #555;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* =========================
+   TEAM SECTION
+========================= */
+
+.team-section h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.team-card{
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.team-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+.team-img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid black;
+}
+
+.team-card h4{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.team-card p{
+    color: #666;
+    font-size: 16px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 768px){
+
+    .about-page{
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .about-heading h1{
+        font-size: 38px;
+    }
+
+    .about-content h2{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .mission-section h2,
+    .team-section h2{
+        font-size: 32px;
+    }
+
+}
+
+/* =========================
+   DONATION GIVERS PAGE
+========================= */
+
+.page-heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-heading h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+}
+
+.page-heading p{
+    font-size: 18px;
+    color: #555;
+}
+
+/* =========================
+   TABLE SECTION
+========================= */
+
+.donation-table{
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.donation-table:hover{
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.table{
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* TABLE HEADER */
+
+.table thead{
+    background: linear-gradient(45deg,#000,#434343);
+    color: white;
+}
+
+.table thead th{
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+}
+
+/* TABLE BODY */
+
+.table tbody td{
+    padding: 15px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.table tbody tr{
+    transition: 0.3s;
+}
+
+.table tbody tr:hover{
+    background-color: #f1f1f1;
+    transform: scale(1.01);
+}
+
+/* NO DATA */
+
+.no-data{
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 18px;
+}
+
+/* =========================
+   REPORTS PAGE WRAPPER
+========================= */
+
+.wrapper{
+    margin-left: 250px;
+    padding: 30px;
+    background-color: lightgray;
+    min-height: 100vh;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.page-heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-heading h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.page-heading p{
+    font-size: 18px;
+    color: #555;
+}
+
+/* =========================
+   REPORT CARDS
+========================= */
+
+.dashboards-card{
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* hover effect */
+.dashboards-card:hover{
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    background: #f1f3f5;
+}
+
+/* header */
+.dashboards-card .card-header{
+    background: linear-gradient(45deg, #000, #434343);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+    font-size: 18px;
+}
+
+/* amount text */
+.dashboards-card .amount{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+
+.dashboards-card:hover .amount{
+    transform: scale(1.1);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 768px){
+    .wrapper{
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .page-heading h1{
+        font-size: 35px;
+    }
+
+    .dashboards-card{
+        margin-bottom: 20px;
+    }
+}
+
+/* =========================
+   NEEDY CONTACTS PAGE
+========================= */
+
+.contact-card{
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.contact-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+    background-color: #f5f5f5;
+}
+
+.contact-icon{
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg,#000,#434343);
+    color: white;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.contact-card h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.contact-card p{
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-info{
+    background: #efefef;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.contact-info:hover{
+    background: #ddd;
+}
+
+.contact-info i{
+    margin-right: 8px;
+    color: #000;
+}
+
+/* width */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+/* track */
+::-webkit-scrollbar-track{
+    background: #dcdcdc;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb{
+    background: #333;
+    border-radius: 20px;
+}
+
+/* hover */
+::-webkit-scrollbar-thumb:hover{
+    background: #000;
+}
+
+.wrapper{
+    animation: fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.table tbody tr{
+    transition: 0.3s;
+}
+
+.table tbody tr:hover{
+    transform: scale(1.01);
+    background-color: #f3f3f3;
+}
+
+.btn-dark{
+    background: black;
+    border: none;
+}
+
+.btn-dark:hover{
+    background: #333;
+}
+
+.btn-danger{
+    border: none;
+}
+
+.footer{
+    text-align: center;
+    padding: 15px;
+    background: #000;
+    color: white;
+    margin-top: 40px;
+}
