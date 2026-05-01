@@ -1,4 +1,4 @@
-🌉 HopeBridge Donation Management System
+🌉 **HopeBridge Donation Management System**
 
 HopeBridge is a frontend-based Donation Management System developed using HTML, CSS, Bootstrap, and JavaScript. The project is designed to help manage donation activities through a clean and user-friendly interface.
 
