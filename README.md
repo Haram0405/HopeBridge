@@ -5,6 +5,7 @@ HopeBridge is a frontend-based Donation Management System developed using HTML, 
 ✨ Features
 
 ✅ Responsive Sidebar Navigation
+
 ✅ Interactive Dashboard
 ✅ Donation Causes Section
 ✅ Category Filter Buttons
